@@ -1,0 +1,260 @@
+BODY,
+HTML {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    font-family: "PingFang SC", "微软雅黑", sans-serif;
+    font-weight: 300;
+    color: #333;
+}
+
+.header {
+    width: 100%;
+    padding: 32px;
+}
+
+h1 {
+    margin: 32px;
+    float: left;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+#add {
+    margin: 32px;
+    margin-top: 38px;
+    float: right;
+    width: 24px;
+}
+
+#tip {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 240px;
+    color: #9E9E9E;
+}
+
+#mask {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 33, 33, 0.72);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -o-transition: all 500ms;
+    transition: all 500ms;
+}
+
+#panel {
+    width: 330px;
+    height: 320px;
+    background: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.08), 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+    text-align: center;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+}
+
+#avatar {
+    margin: 0px auto;
+    margin-top: -48px;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background: #FFF;
+    background-size: cover !important;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.12);
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -o-transition: all 500ms;
+    transition: all 500ms;
+}
+
+#random {
+    color: #4A90E2;
+    text-decoration: underline;
+}
+
+input {
+    margin: 0px;
+    width: 60%;
+    background: #FFFFFF;
+    border: 2px solid #EEEEEE;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 12px 16px;
+    outline: none;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -o-transition: all 500ms;
+    transition: all 500ms;
+    margin-top: 8px;
+}
+
+input:first-child {
+    margin-top: 24px;
+}
+
+input:focus {
+    border: 2px solid #4A90E2;
+}
+
+#save {
+    width: 26%;
+    background: #4A90E2;
+    border-radius: 10px;
+    padding: 12px;
+    color: #FFF;
+    margin-top: 24px;
+    float: left;
+    margin-left: 48px;
+}
+
+#cancel {
+    width: 26%;
+    background: #EEEEEE;
+    border-radius: 10px;
+    padding: 12px;
+    color: #333;
+    margin-top: 24px;
+    float: right;
+    margin-right: 48px;
+}
+/* 禁用鼠标 */
+.disableAddModal {
+    background: rgba(33, 33, 33, 0) !important;
+    pointer-events: none;
+}
+ /* 完全透明 */
+.disableAddModal #panel {
+    transform: scale(0.9);
+    opacity: 0; 
+   
+}
+
+#content {
+    padding: 16px;
+    padding-top: 97px;
+}
+
+.card {
+    margin-top: 8px;
+    width: 100%;
+    height: 104px;
+    background: #FFFFFF;
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.08), 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    overflow: hidden;
+
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+}
+
+.card_expand {
+    height:145px !important;
+}
+
+.card_expand .expand {
+    margin-top: 16px !important;
+}
+
+.avatar {
+    margin-top: 24px;
+    margin-left: 24px;
+    float: left;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #9E9E9E;
+    background-size: cover !important;
+    border: 2px solid #FFFFFF;
+    border: 3px solid #EEEEEE;
+}
+
+.group {
+    margin-left: 16px;
+    margin-top: 33px;
+    float: left;
+    line-height: 2px;
+}
+
+.info {
+    font-size: 12px;
+    color: #9E9E9E;
+}
+
+.more {
+    padding: 24px;
+    margin-top: 28px;
+    width: 16px;
+    float: right;
+}
+
+.expand {
+    width: 100%;
+    float: left;
+    margin-top: 24px;
+}
+
+
+.edit {
+    text-align:center;
+    vertical-align:middle;
+    display:flex;
+    align-items: center ;
+    justify-content: center;
+    background: url("./img/edit.png");
+    background-size: cover;
+    float: left;
+    width: 50%;
+    height: 43px;
+
+    -webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+    -o-transition: all 200ms;
+    transition: all 200ms;
+}
+
+.edit:hover {
+    background: url("./img/edit-active.png");
+    background-size: cover;
+}
+
+.delete {
+    background: url("./img/delete.png");
+    background-size: cover;
+    float: right;
+    width: 50%;
+    height: 43px;
+    display:flex;
+    align-items: center ;
+    justify-content: center;
+    -webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+    -o-transition: all 200ms;
+    transition: all 200ms;
+}
+
+.delete:hover {
+    background: url("./img/delete-active.png");
+    background-size: cover;
+}
+
+.line {
+    float: left;
+    height: 24px;
+    border-right: #EEE 1px solid;
+    margin-left: -1px;
+    margin-top: 8px;
+}

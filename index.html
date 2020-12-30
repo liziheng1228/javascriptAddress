@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div id="mask" class="disableAddModal">
+        <div id="panel">
+            <div id="avatar"></div>
+            <p id="random">随机头像</p>
+            <input type="text" id="name" placeholder="请输入中文姓名">
+            <input type="text" id="info" placeholder="请输入英文姓名">
+            <div id="save">保存</div>
+            <div id="cancel">取消</div>
+        </div>
+    </div>
+    <div id="header">
+        <h1 id="title">通信录</h1>
+        <img id="add" src="./img/add.png" alt="" />
+    </div>
+    <p id="tip">
+        当前没有任何联系人<br />
+        请点击右上角添加
+    </p>
+    <div id="content">
+        <div id="template" class="card" style="display:none;">
+            <div class="avatar"></div>
+            <div class="group">
+                <p class="name">测试</p>
+                <p class="info">Test</p>
+            </div>
+            <img src="./img/more.png" alt="" class=" more">
+            <div class="expand" >
+                <div class="edit" >修改</div>
+                <div class="line"></div>
+                <div class="delete">删除</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./index1.js"></script>
+</body>
+</html>
